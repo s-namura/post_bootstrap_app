@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.order(id: :asc)
+    @posts = Post.order(id: :asc)
   end
 
   def show
@@ -26,8 +26,11 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    post = Post.find(params[:id])
+    post.destroy!
+    redirect_to post
   end
-  
+
   private
 
   def post_params
