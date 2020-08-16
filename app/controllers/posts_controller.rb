@@ -29,14 +29,14 @@ class PostsController < ApplicationController
     # 修正（@を追加しているので注意！）
     @post.update!(post_params)
     # ***** 次を編集 *****
-    redirect_to post, notice: "更新しました"    
+    redirect_to @post, notice: "更新しました"    
   end
 
   def destroy
     # 修正（@を追加しているので注意！）
     @post.destroy!
     # ***** 次を編集 *****
-    redirect_to post, notice: "削除しました"
+    redirect_to @post, alert: "削除しました"
   end
 
   private
