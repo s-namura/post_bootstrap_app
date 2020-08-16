@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   # ***** 以下を追加 *****
-  brfore_action :set_post, only: %i[show edit update destroy]
+  before_action :set_post, only: %i[show edit update destroy]
   # ***** 以上を追加 *****
   
   def index
