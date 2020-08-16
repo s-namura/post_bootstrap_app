@@ -1,3 +1,6 @@
+<!-- ***** 一番上に追加 ***** -->
+<%= render "layouts/error_messages" %>
+<!-- ***** 略 *************  -->
 <%= form_with model: @post, local: true do |form| %>
   <div>
   <!-- ***** 次を修正（，"タイトル"を消去） ***** -->
