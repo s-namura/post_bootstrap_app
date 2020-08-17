@@ -1,3 +1,18 @@
+<!// -- ***** 以下を一番上に仮置き ***** -->
+<a href="#" class="btn btn-primary">アイコン無し</a>
+<a href="#" class="btn btn-primary"><i class="fas fa-envelope-open-text"></i> 詳細</a>
+
+<%= link_to "アイコン無し", "#", class: "btn btn-success" %>
+<%= link_to '<i class="far fa-edit"></i> 編集' .html_safe, "#", class: "btn btn-success" %>
+
+<%= link_to "#", class: "btn btn-danger" do %>
+  アイコン無し
+<% end %>
+<%= link_to "#", class: "btn btn-danger" do %>
+  <i class="far fa-trash-alt"></i> 削除
+<% end %>
+<!// -- ***** 以上を追加 ***** -->
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,6 +28,16 @@
  *= require_tree .
  *= require_self
  */
+
+/* 以下を追加 */ 
+@import "bootstrap/scss/bootstrap";
+
+$fa-font-path: 'fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
+/* 以上を追加 */ 
 
 // ***** 以下を追加 *****
 
