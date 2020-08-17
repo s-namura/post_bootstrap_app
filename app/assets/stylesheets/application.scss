@@ -34,4 +34,14 @@ div.field_with_errors {
   }
 // ***** 以上を追加 *****
 }
-
+// ***** 以下を追加 *****
+// 共通
+.base-container {
+  @extend .container-fluid;
+  max-width: var(--breakpoint-lg);
+  padding: 30px 15px;
+}
+// ***** 以下を追加 *****
+body {
+  padding-top: 56px;
+}
