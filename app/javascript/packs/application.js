@@ -15,3 +15,6 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+// ***** 一番下に追加 *****
+require("bootstrap/dist/js/bootstrap")
+require("@fortawesome/fontawesome-free/js/all")
